@@ -1,0 +1,49 @@
+<div class="container">
+    <form #employeeForm = "ngForm" (ngSubmit) = "onSubmit()" >
+        <div class="row">
+            <div class="col sm-3"><label>Emp No</label></div>
+            <div class="col sm-6"><input type="text" name="empNo" [(ngModel)] = "employee.empno" /></div>
+        </div>
+        &nbsp;
+        <div class="row">
+            <div class="col sm-3"><label>Employee Name</label></div>
+            <div class="col sm-6"><input type="text" name="empName" [(ngModel)] = "employee.ename" /></div>
+        </div>
+        &nbsp;
+        <div class="row">
+            <div class="col sm-3"><label>Job</label></div>
+            <div class="col sm-6"><input type="text" name="job" [(ngModel)] = "employee.job"/></div>
+        </div>
+        &nbsp;
+        <div class="row">
+            <div class="col sm-3"><label>Hire date</label></div>
+            <div class="col sm-6"><input type="text" name="hireDate" [(ngModel)] = "employee.hiredate"/></div>
+        </div>
+        &nbsp;
+        <div class="row">
+            <div class="col sm-3"><label>ManagerID</label></div>
+            <div class="col sm-6"><input type="text" name="managerId" [(ngModel)] = "employee.managerId"/></div>
+        </div>
+        &nbsp;
+        <div class="row">
+            <div class="col sm-3"><label>Salary</label></div>
+            <div class="col sm-6"><input type="text" name="salary" [(ngModel)] = "employee.salary"/></div>
+        </div>
+        &nbsp;
+        <div class="row">
+            <div class="col sm-3"><label>Commission</label></div>
+            <div class="col sm-6"><input type="text" name="commission" [(ngModel)] = "employee.commission"/></div>
+        </div>
+        &nbsp;
+        <div class="row">
+            <div class="col sm-3"><label>Dept No</label></div>
+            <div class="col sm-6"><input type="text" name="deptNo" [(ngModel)] = "employee.deptno"/></div>
+        </div>
+        &nbsp;
+        <div class="row">
+            <div class="col sm-3">
+            <input type="submit" name="submit" value="submit" class="btn btn-primary" />
+            </div>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,31 @@
+
+<div class="container">
+    <div>
+        <button type="button" class="btn btn-info" (click)="addEmployee()">Add Employee</button>
+    </div>
+    <table class="table table-bordered table-striped"style="margin-top:2%;">
+        <thead>
+        <tr>
+            <th>empno</th>
+            <th>ename</th>
+            <th>job</th>
+            <th>hiredate</th>
+            <th>managerId</th>
+            <th>salary</th>
+            <th>commission</th>
+            <th>deptno</th>
+        </tr>
+        </thead>
+
+        <tr *ngFor="let emp of employees" >
+            <td>{{emp.empno}}</td>
+            <td>{{emp.ename}}</td>
+            <td>{{emp.job}}</td>
+            <td>{{emp.hiredate}}</td>
+            <td>{{emp.managerId}}</td>
+            <td>{{emp.salary | currency: 'INR'}}</td>
+            <td>{{emp.commission | currency: 'INR'}}</td>
+            <td>{{emp.deptno}}</td>  
+        </tr>
+    </table>
+</div>

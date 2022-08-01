@@ -1,0 +1,22 @@
+
+<div class="container">
+    <div>
+        <button type="button" class="btn btn-info" (click)="addDepartment()">Add Department</button>
+    </div>
+    <table class="table table-bordered table-info table-striped table-hover"style="margin-top:2%;">
+        <thead>
+        <tr>
+            <th>DeptNo</th>
+            <th>Department Name</th>
+            <th>Location</th>
+            
+        </tr>
+        </thead>
+
+        <tr *ngFor="let dept of departments" >
+            <td>{{dept.deptno}}</td>
+            <td>{{dept.dname}}</td>
+            <td>{{dept.location}}</td>
+        </tr>
+    </table>
+</div>
